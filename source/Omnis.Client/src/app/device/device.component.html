@@ -1,0 +1,5 @@
+<mat-card>
+  <mat-card-title>{{ device.deviceName }}</mat-card-title>
+  <img mat-card-image src="{{ device.imageName }}" alt="{{ device.imageName }}">
+  <mat-card-footer [ngClass]="device.state">{{ device.state }}</mat-card-footer>
+</mat-card>

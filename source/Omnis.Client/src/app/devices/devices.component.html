@@ -1,0 +1,10 @@
+<div class="flexWrap">
+  <mat-card *ngFor="let device of devices$ | async">
+    <mat-card-title>{{ device.deviceName }}</mat-card-title>
+    <img mat-card-image src="{{ device.imageName }}" alt="{{ device.imageName }}">
+    <mat-card-actions>
+      <button *ngIf="device.isEnabled" mat-button (click)="disable(device.deviceName)">Disable</button>
+      <button *ngIf="!device.isEnabled" mat-button (click)="enable(device.deviceName)">Enable</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

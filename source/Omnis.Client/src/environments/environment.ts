@@ -1,10 +1,13 @@
+const BASE_URL = 'http://localhost:4792';
+
 const providers: any[] = [
   { provide: 'environment', useValue: 'Development' },
-  { provide: 'baseUrl', useValue: 'http://localhost:3000' }
+  { provide: 'baseUrl', useValue: BASE_URL }
 ];
 
 export const ENV_PROVIDERS = providers;
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: BASE_URL
 };

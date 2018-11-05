@@ -1,0 +1,23 @@
+mat-card {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.noStyle {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.ONLINE {
+  color: green;
+}
+
+.OFFLINE {
+  color: red;
+}

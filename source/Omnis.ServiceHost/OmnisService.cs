@@ -12,7 +12,9 @@
 
         public void Start()
         {
-            var options = new StartOptions(string.Format("http://+:{0}", AppConfig.ServicePort))
+            log4net.Config.XmlConfigurator.Configure();
+
+            var options = new StartOptions($"http://+:{AppConfig.ServicePort}")
             {
                 ServerFactory = "Microsoft.Owin.Host.HttpListener"
             };

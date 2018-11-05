@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+  <span routerLink="home">OMNIS</span>
+  <button mat-button routerLink="dashboard">Dashboard</button>
+  <button mat-button routerLink="devices">Devices</button>
+  <span class="example-fill-remaining-space"></span>
+  <button mat-button (click)="navigate()">{{ loginState.userName}}</button>
+</mat-toolbar>
